@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: CHIRP\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-06-23 13:53-0700\n"
+"POT-Creation-Date: 2026-07-03 10:49+0200\n"
 "PO-Revision-Date: 2025-08-22 15:43+0300\n"
 "Last-Translator: Olesya Gerasimenko <goa@altlinux.org>\n"
 "Language-Team: Basealt Translation Team\n"
@@ -19,7 +19,7 @@ msgstr ""
 msgid "%(value)s must be between %(min)i and %(max)i"
 msgstr "%(value)s должно находиться в диапазоне от %(min)i до %(max)i"
 
-#: ../wxui/memedit.py:2202
+#: ../wxui/memedit.py:2236
 #, python-format
 msgid "%i Memories and shift all up"
 msgid_plural "%i Memories and shift all up"
@@ -27,7 +27,7 @@ msgstr[0] "Ячейки памяти (%i) и сдвинуть все вверх"
 msgstr[1] "Ячейки памяти (%i) и сдвинуть все вверх"
 msgstr[2] "Ячейки памяти (%i) и сдвинуть все вверх"
 
-#: ../wxui/memedit.py:2193
+#: ../wxui/memedit.py:2227
 #, python-format
 msgid "%i Memory"
 msgid_plural "%i Memories"
@@ -35,7 +35,7 @@ msgstr[0] "Ячейки памяти (%i)"
 msgstr[1] "Ячейки памяти (%i)"
 msgstr[2] "Ячейки памяти (%i)"
 
-#: ../wxui/memedit.py:2197
+#: ../wxui/memedit.py:2231
 #, python-format
 msgid "%i Memory and shift block up"
 msgid_plural "%i Memories and shift block up"
@@ -68,7 +68,7 @@ msgstr "(Работало ли это раньше? Новая станция? �
 msgid "(none)"
 msgstr "(нет)"
 
-#: ../wxui/memedit.py:2598
+#: ../wxui/memedit.py:2671
 #, python-format
 msgid "...and %i more"
 msgstr "...и ещё %i"
@@ -642,7 +642,7 @@ msgstr ""
 "4. Нажмите переключатель [MONI] (на экране появится «WAIT»).\n"
 "5. Нажмите «OK».\n"
 
-#: ../drivers/vx6.py:370 ../drivers/vx3.py:373
+#: ../drivers/vx3.py:373 ../drivers/vx6.py:370
 msgid ""
 "1. Turn radio off.\n"
 "2. Connect cable to MIC/SP jack.\n"
@@ -656,7 +656,7 @@ msgstr ""
 "     (на экране появится «CLONE»).\n"
 "4. <b>После нажатия «OK»</b> нажмите клавишу [BAND] для отправки образа.\n"
 
-#: ../drivers/vx6.py:377 ../drivers/vx3.py:380
+#: ../drivers/vx3.py:380 ../drivers/vx6.py:377
 msgid ""
 "1. Turn radio off.\n"
 "2. Connect cable to MIC/SP jack.\n"
@@ -843,7 +843,7 @@ msgstr ""
 "5. Убедитесь, что станция настроена на неактивный канал.\n"
 "6. Нажмите «ОК» для отправки образа на устройство.\n"
 
-#: ../drivers/uvb5.py:293 ../drivers/wouxun.py:222 ../drivers/tg_uv2p.py:232
+#: ../drivers/tg_uv2p.py:232 ../drivers/uvb5.py:293 ../drivers/wouxun.py:222
 msgid ""
 "1. Turn radio off.\n"
 "2. Connect cable to mic/spkr connector.\n"
@@ -859,7 +859,7 @@ msgstr ""
 "5. Убедитесь, что станция настроена на неактивный канал.\n"
 "6. Нажмите «ОК» для загрузки образа с устройства.\n"
 
-#: ../drivers/uvb5.py:301 ../drivers/wouxun.py:230 ../drivers/tg_uv2p.py:240
+#: ../drivers/tg_uv2p.py:240 ../drivers/uvb5.py:301 ../drivers/wouxun.py:230
 msgid ""
 "1. Turn radio off.\n"
 "2. Connect cable to mic/spkr connector.\n"
@@ -1148,6 +1148,19 @@ msgstr "Тема ошибки:"
 msgid "Building Radio Browser"
 msgstr "Браузер станций"
 
+#: ../wxui/memedit.py:2918
+msgid "Bulk Edit Selected Memories"
+msgstr ""
+
+#: ../wxui/memedit.py:2188
+msgid "Bulk Edit..."
+msgstr ""
+
+#: ../wxui/memedit.py:2384
+#, python-format
+msgid "Bulk edit %i memories"
+msgstr ""
+
 #: ../wxui/main.py:1658
 msgid "CHIRP must be restarted for the new selection to take effect"
 msgstr "Для применения изменений необходимо перезапустить CHIRP"
@@ -1160,6 +1173,10 @@ msgstr "Когда выполняется запрос с учётом расп�
 #: ../wxui/query_sources.py:1067
 msgid "Canada"
 msgstr "Канада"
+
+#: ../wxui/memedit.py:2983
+msgid "Cancel"
+msgstr "Отмена"
 
 #: ../wxui/common.py:504
 msgid "Changing this setting requires refreshing the settings from the image, which will happen now."
@@ -1245,12 +1262,12 @@ msgstr "Клонирование завершено, проверка налич
 msgid "Cloning"
 msgstr "Клонирование"
 
-#: ../drivers/bj9900.py:133 ../drivers/ft450d.py:511 ../drivers/ft4.py:332
+#: ../drivers/bj9900.py:133 ../drivers/ft4.py:332 ../drivers/ft450d.py:511
 #: ../drivers/ft817.py:343
 msgid "Cloning from radio"
 msgstr "Клонирование из станции"
 
-#: ../drivers/bj9900.py:165 ../drivers/ft450d.py:540 ../drivers/ft4.py:333
+#: ../drivers/bj9900.py:165 ../drivers/ft4.py:333 ../drivers/ft450d.py:540
 #: ../drivers/ft817.py:381
 msgid "Cloning to radio"
 msgstr "Клонирование на станцию"
@@ -1271,7 +1288,7 @@ msgstr "Закрыть файл"
 msgid "Close string value with double-quote (\")"
 msgstr "Закрыть строковое значение двойной кавычкой (\")"
 
-#: ../wxui/memedit.py:2261
+#: ../wxui/memedit.py:2295
 #, python-format
 msgid "Cluster %i memory"
 msgid_plural "Cluster %i memories"
@@ -1307,11 +1324,11 @@ msgstr ""
 msgid "Convert to FM"
 msgstr "Преобразовать в FM"
 
-#: ../wxui/memedit.py:2172
+#: ../wxui/memedit.py:2206
 msgid "Copy"
 msgstr "Копировать"
 
-#: ../wxui/memedit.py:2176
+#: ../wxui/memedit.py:2210
 msgid "Copy portable"
 msgstr "Копировать портативно"
 
@@ -1332,11 +1349,11 @@ msgstr "Пользовательский порт"
 msgid "Custom..."
 msgstr "Пользовательский..."
 
-#: ../wxui/memedit.py:2167
+#: ../wxui/memedit.py:2201
 msgid "Cut"
 msgstr "Вырезать"
 
-#: ../wxui/memedit.py:2441
+#: ../wxui/memedit.py:2514
 #, python-format
 msgid "Cut %i memories"
 msgstr "Вырезать ячейки памяти (%i)"
@@ -1357,7 +1374,7 @@ msgstr ""
 msgid "DTMF decode"
 msgstr "Расшифровка DTMF"
 
-#: ../wxui/memedit.py:2900
+#: ../wxui/memedit.py:3057
 msgid "DV Memory"
 msgstr "DV-память"
 
@@ -1369,7 +1386,7 @@ msgstr "Впереди опасность"
 msgid "Dec"
 msgstr "Десятичный"
 
-#: ../wxui/memedit.py:2187
+#: ../wxui/memedit.py:2221
 msgid "Delete"
 msgstr "Удалить"
 
@@ -1390,15 +1407,15 @@ msgstr "Режим разработчика"
 msgid "Developer state is now %s. CHIRP must be restarted to take effect"
 msgstr "Режим разработчика теперь %s. Для применения изменений необходимо перезапустить CHIRP"
 
-#: ../wxui/memedit.py:2298 ../wxui/developer.py:98
+#: ../wxui/developer.py:98 ../wxui/memedit.py:2332
 msgid "Diff Raw Memories"
 msgstr "Сравнить необработанные ячейки памяти"
 
-#: ../wxui/memedit.py:2306
+#: ../wxui/memedit.py:2340
 msgid "Diff against another editor"
 msgstr "Сравнить с другим редактором"
 
-#: ../wxui/memedit.py:2817
+#: ../wxui/memedit.py:2890
 msgid "Digital Code"
 msgstr "Цифровой код"
 
@@ -1468,17 +1485,17 @@ msgstr "Цифровые репитеры с двойным режимом, ко
 msgid "Duplex"
 msgstr "Дуплекс"
 
-#: ../wxui/memedit.py:2328
+#: ../wxui/memedit.py:2401
 #, python-format
 msgid "Edit %i memories"
 msgstr "Изменить ячейки памяти (%i)"
 
-#: ../wxui/memedit.py:2847
+#: ../wxui/memedit.py:3004
 #, python-format
 msgid "Edit details for %i memories"
 msgstr "Редактировать сведения о ячейках памяти (%i)"
 
-#: ../wxui/memedit.py:2845
+#: ../wxui/memedit.py:3002
 #, python-format
 msgid "Edit details for memory %i"
 msgstr "Редактировать сведения о ячейке памяти %i"
@@ -1589,7 +1606,7 @@ msgstr "Исключить приватные и закрытые ретранс
 msgid "Experimental driver"
 msgstr "Экспериментальный драйвер"
 
-#: ../wxui/memedit.py:2760
+#: ../wxui/memedit.py:2833
 msgid "Export can only write CSV files"
 msgstr "При экспорте можно выполнять запись только в файлы CSV"
 
@@ -1601,7 +1618,7 @@ msgstr "Экспорт в CSV"
 msgid "Export to CSV..."
 msgstr "Экспорт в CSV..."
 
-#: ../wxui/memedit.py:2889
+#: ../wxui/memedit.py:3046
 msgid "Extra"
 msgstr "Дополнительно"
 
@@ -1627,7 +1644,7 @@ msgstr ""
 "актуальные сведения о репитерах в Европе. Учётная запись\n"
 "не требуется."
 
-#: ../wxui/memedit.py:2798
+#: ../wxui/memedit.py:2871
 msgid "Failed to export some memories"
 msgstr ""
 
@@ -1635,8 +1652,8 @@ msgstr ""
 msgid "Failed to load radio browser"
 msgstr "Не удалось загрузить браузер станций"
 
-#: ../sources/przemienniki_eu.py:57 ../sources/przemienniki_net.py:59
-#: ../sources/mapy73pl.py:61
+#: ../sources/mapy73pl.py:61 ../sources/przemienniki_eu.py:57
+#: ../sources/przemienniki_net.py:59
 msgid "Failed to parse result"
 msgstr "Не удалось проанализировать результат"
 
@@ -1763,11 +1780,11 @@ msgstr ""
 "5 - Отключите интерфейсный кабель! Иначе с правой стороны\n"
 "    не будет звука!\n"
 
-#: ../drivers/mursv1.py:341 ../drivers/baofeng_wp970i.py:327
-#: ../drivers/btech.py:666 ../drivers/gmrsuv1.py:391
-#: ../drivers/tdxone_tdq8a.py:444 ../drivers/uv6r.py:339
-#: ../drivers/uv5x3.py:417 ../drivers/gmrsv2.py:363
-#: ../drivers/baofeng_uv17Pro.py:514 ../drivers/bf_t1.py:484
+#: ../drivers/baofeng_uv17Pro.py:514 ../drivers/baofeng_wp970i.py:327
+#: ../drivers/bf_t1.py:484 ../drivers/btech.py:666 ../drivers/gmrsuv1.py:391
+#: ../drivers/gmrsv2.py:363 ../drivers/mursv1.py:341
+#: ../drivers/tdxone_tdq8a.py:444 ../drivers/uv5x3.py:417
+#: ../drivers/uv6r.py:339
 msgid ""
 "Follow these instructions to download your info:\n"
 "1 - Turn off your radio\n"
@@ -1872,7 +1889,7 @@ msgstr ""
 "6 - Выключите и снова включите питание станции, чтобы выйти\n"
 "    из режима клонирования\n"
 
-#: ../drivers/btech.py:672 ../drivers/bf_t1.py:490
+#: ../drivers/bf_t1.py:490 ../drivers/btech.py:672
 msgid ""
 "Follow these instructions to upload your info:\n"
 "1 - Turn off your radio\n"
@@ -1914,7 +1931,7 @@ msgstr ""
 "3 - Включите вашу станцию\n"
 "4 - Чтобы начать, нажмите «ОК»\n"
 
-#: ../drivers/vgc.py:586 ../drivers/lt725uv.py:486
+#: ../drivers/lt725uv.py:486 ../drivers/vgc.py:586
 msgid ""
 "Follow this instructions to download your info:\n"
 "1 - Turn off your radio\n"
@@ -1942,11 +1959,10 @@ msgstr ""
 "3 - Включите вашу станцию\n"
 "4 - Выполните загрузку ваших радиоданных\n"
 
-#: ../drivers/vgc.py:592 ../drivers/mursv1.py:347
-#: ../drivers/baofeng_wp970i.py:333 ../drivers/gmrsuv1.py:397
-#: ../drivers/lt725uv.py:492 ../drivers/tdxone_tdq8a.py:450
-#: ../drivers/uv6r.py:345 ../drivers/uv5x3.py:423 ../drivers/gmrsv2.py:369
-#: ../drivers/baofeng_uv17Pro.py:520
+#: ../drivers/baofeng_uv17Pro.py:520 ../drivers/baofeng_wp970i.py:333
+#: ../drivers/gmrsuv1.py:397 ../drivers/gmrsv2.py:369 ../drivers/lt725uv.py:492
+#: ../drivers/mursv1.py:347 ../drivers/tdxone_tdq8a.py:450
+#: ../drivers/uv5x3.py:423 ../drivers/uv6r.py:345 ../drivers/vgc.py:592
 msgid ""
 "Follow this instructions to upload your info:\n"
 "1 - Turn off your radio\n"
@@ -1992,9 +2008,9 @@ msgstr ""
 msgid "Frequency granularity in kHz"
 msgstr "Гранулярность по частоте (кГц)"
 
-#: ../drivers/ga510.py:1094 ../drivers/mml_jc8810.py:1383
-#: ../drivers/tdh8.py:2540 ../drivers/retevis_ha1g.py:1439
-#: ../drivers/uv5r.py:1949 ../drivers/baofeng_uv17Pro.py:1297
+#: ../drivers/baofeng_uv17Pro.py:1297 ../drivers/ga510.py:1094
+#: ../drivers/mml_jc8810.py:1383 ../drivers/retevis_ha1g.py:1439
+#: ../drivers/tdh8.py:2540 ../drivers/uv5r.py:1949
 msgid "Frequency in this range must not be AM mode"
 msgstr "Для частоты в этом диапазоне не должен использоваться AM-режим"
 
@@ -2002,10 +2018,10 @@ msgstr "Для частоты в этом диапазоне не должен �
 msgid "Frequency in this range not supported by firmware"
 msgstr ""
 
-#: ../drivers/ga510.py:1087 ../drivers/radtel_rt900.py:1623
-#: ../drivers/mml_jc8810.py:1380 ../drivers/tdh8.py:2537
-#: ../drivers/retevis_ha1g.py:1435 ../drivers/uv5r.py:1945
-#: ../drivers/baofeng_uv17Pro.py:1294
+#: ../drivers/baofeng_uv17Pro.py:1294 ../drivers/ga510.py:1087
+#: ../drivers/mml_jc8810.py:1380 ../drivers/radtel_rt900.py:1623
+#: ../drivers/retevis_ha1g.py:1435 ../drivers/tdh8.py:2537
+#: ../drivers/uv5r.py:1945
 msgid "Frequency in this range requires AM mode"
 msgstr "Для частоты в этом диапазоне должен использоваться AM-режим"
 
@@ -2072,7 +2088,7 @@ msgstr "Если установлено, упорядочить результа
 msgid "Import"
 msgstr "Импорт"
 
-#: ../wxui/memedit.py:2477
+#: ../wxui/memedit.py:2550
 #, python-format
 msgid "Import %i memories"
 msgstr "Импортировать ячейки памяти (%i)"
@@ -2105,7 +2121,7 @@ msgstr "Информация"
 msgid "Information"
 msgstr "Информация"
 
-#: ../wxui/memedit.py:2161
+#: ../wxui/memedit.py:2195
 msgid "Insert Row Above"
 msgstr "Вставить строку выше"
 
@@ -2130,8 +2146,8 @@ msgstr ""
 msgid "Invalid %(value)s (use decimal degrees)"
 msgstr "%(value)s — неверно (используйте десятичные градусы)"
 
-#: ../wxui/query_sources.py:70 ../wxui/query_sources.py:124
-#: ../wxui/memedit.py:2004
+#: ../wxui/memedit.py:2004 ../wxui/query_sources.py:70
+#: ../wxui/query_sources.py:124
 msgid "Invalid Entry"
 msgstr "Некорректная запись"
 
@@ -2139,7 +2155,7 @@ msgstr "Некорректная запись"
 msgid "Invalid ZIP code"
 msgstr "Неверный почтовый индекс"
 
-#: ../wxui/memedit.py:2003 ../wxui/memedit.py:2982
+#: ../wxui/memedit.py:2003 ../wxui/memedit.py:3139
 #, python-format
 msgid "Invalid edit: %s"
 msgstr "Некорректное изменение: %s"
@@ -2295,8 +2311,8 @@ msgstr "Чтобы редактировать ячейку памяти, нео�
 msgid "Memory {num} not in bank {bank}"
 msgstr "Ячейка памяти {num} отсутствует в банке {bank}"
 
-#: ../wxui/query_sources.py:626 ../wxui/query_sources.py:779
-#: ../wxui/memedit.py:668
+#: ../wxui/memedit.py:668 ../wxui/query_sources.py:626
+#: ../wxui/query_sources.py:779
 msgid "Mode"
 msgstr "Режим"
 
@@ -2329,7 +2345,7 @@ msgstr "Подробности"
 msgid "More than one port found: %s"
 msgstr "Найдено более одного порта: %s"
 
-#: ../wxui/memedit.py:2698
+#: ../wxui/memedit.py:2771
 #, python-format
 msgid "Move %i memories"
 msgstr "Переместить ячейки памяти (%i)"
@@ -2342,7 +2358,7 @@ msgstr "Переместить вниз"
 msgid "Move Up"
 msgstr "Переместить вверх"
 
-#: ../wxui/memedit.py:2668
+#: ../wxui/memedit.py:2741
 msgid "Move operations are disabled while the view is sorted"
 msgstr "Операции перемещения отключены, пока область просмотра упорядочена"
 
@@ -2354,7 +2370,7 @@ msgstr "Новое окно"
 msgid "New version available"
 msgstr "Доступна новая версия"
 
-#: ../wxui/memedit.py:2345
+#: ../wxui/memedit.py:2418
 msgid "No empty rows below!"
 msgstr "Ниже нет пустых строк!"
 
@@ -2372,12 +2388,12 @@ msgstr "Модули не найдены"
 msgid "No modules found in issue %i"
 msgstr "В задаче %i не найдены модули"
 
-#: ../wxui/memedit.py:2531
+#: ../wxui/memedit.py:2604
 msgid "No more space available; some memories were not applied"
 msgstr "Свободного места больше нет; некоторые ячейки памяти не применены"
 
-#: ../sources/przemienniki_eu.py:53 ../sources/przemienniki_net.py:55
-#: ../sources/mapy73pl.py:57
+#: ../sources/mapy73pl.py:57 ../sources/przemienniki_eu.py:53
+#: ../sources/przemienniki_net.py:55
 msgid "No results"
 msgstr "Нет результатов"
 
@@ -2389,9 +2405,14 @@ msgstr "Нет результатов!"
 msgid "No traces stored"
 msgstr ""
 
-#: ../wxui/query_sources.py:45 ../wxui/memedit.py:1362
+#: ../wxui/memedit.py:1362 ../wxui/query_sources.py:45
 msgid "Number"
 msgstr "Число"
+
+#: ../wxui/memedit.py:2935
+#, python-format
+msgid "Number of memories to edit: %i"
+msgstr ""
 
 #: ../wxui/memedit.py:339
 msgid "Offset"
@@ -2508,7 +2529,7 @@ msgstr "Опционально: AA00 - AA00aa11"
 msgid "Optional: County, Hospital, etc."
 msgstr "Опционально: округ, больница и т.д."
 
-#: ../wxui/memedit.py:2511
+#: ../wxui/memedit.py:2584
 msgid "Overwrite memories?"
 msgstr "Перезаписать ячейки памяти?"
 
@@ -2522,8 +2543,8 @@ msgstr ""
 "В этой версии поддерживается только часть из\n"
 "более чем 130 доступных параметров станции.\n"
 
-#: ../sources/przemienniki_eu.py:48 ../sources/przemienniki_net.py:50
-#: ../sources/mapy73pl.py:52
+#: ../sources/mapy73pl.py:52 ../sources/przemienniki_eu.py:48
+#: ../sources/przemienniki_net.py:50
 msgid "Parsing"
 msgstr "Анализ"
 
@@ -2531,7 +2552,7 @@ msgstr "Анализ"
 msgid "Password"
 msgstr "Пароль"
 
-#: ../wxui/memedit.py:2181
+#: ../wxui/memedit.py:2215
 msgid "Paste"
 msgstr "Вставить"
 
@@ -2539,26 +2560,26 @@ msgstr "Вставить"
 msgid "Paste external memories"
 msgstr "Вставить внешние ячейки памяти"
 
-#: ../wxui/memedit.py:2611
+#: ../wxui/memedit.py:2684
 msgid "Paste memories"
 msgstr "Вставить ячейки памяти"
 
-#: ../wxui/memedit.py:2505
+#: ../wxui/memedit.py:2578
 #, python-format
 msgid "Pasted memories will overwrite %s existing memories"
 msgstr "Вставленные ячейки памяти перезапишут существующие ячейки памяти (%s)"
 
-#: ../wxui/memedit.py:2508
+#: ../wxui/memedit.py:2581
 #, python-format
 msgid "Pasted memories will overwrite memories %s"
 msgstr "Вставленные ячейки памяти перезапишут ячейки памяти (%s)"
 
-#: ../wxui/memedit.py:2502
+#: ../wxui/memedit.py:2575
 #, python-format
 msgid "Pasted memories will overwrite memory %s"
 msgstr "Вставленные ячейки памяти перезапишут ячейку памяти %s"
 
-#: ../wxui/memedit.py:2499
+#: ../wxui/memedit.py:2572
 #, python-format
 msgid "Pasted memory will overwrite memory %s"
 msgstr "Вставленная ячейка памяти перезапишет ячейку памяти %s"
@@ -2615,7 +2636,7 @@ msgstr "Печать"
 msgid "Prolific USB device"
 msgstr "USB-устройство Prolific"
 
-#: ../wxui/memedit.py:2154
+#: ../wxui/memedit.py:2180
 msgid "Properties"
 msgstr "Свойства"
 
@@ -2652,8 +2673,8 @@ msgstr "В синтаксисе запроса нет ошибок"
 msgid "Query syntax help"
 msgstr "Справка по синтаксису запроса"
 
-#: ../sources/przemienniki_eu.py:36 ../sources/przemienniki_net.py:36
-#: ../sources/mapy73pl.py:36
+#: ../sources/mapy73pl.py:36 ../sources/przemienniki_eu.py:36
+#: ../sources/przemienniki_net.py:36
 msgid "Querying"
 msgstr "Выполняется запрос"
 
@@ -2665,7 +2686,7 @@ msgstr "DTCS RX"
 msgid "Radio"
 msgstr "Станция"
 
-#: ../drivers/ft60.py:89 ../drivers/ft60.py:91 ../drivers/ft450d.py:576
+#: ../drivers/ft450d.py:576 ../drivers/ft60.py:89 ../drivers/ft60.py:91
 #: ../drivers/ft817.py:410
 #, python-format
 msgid "Radio did not ack block %i"
@@ -2892,7 +2913,7 @@ msgstr "Параметры доступны только для чтения и�
 msgid "Shift amount (or transmit frequency) controlled by duplex"
 msgstr "Величина сдвига (или частота передачи), которой управляет дуплекс"
 
-#: ../wxui/memedit.py:2290 ../wxui/developer.py:101
+#: ../wxui/developer.py:101 ../wxui/memedit.py:2324
 msgid "Show Raw Memory"
 msgstr "Показать необработанную ячейку памяти"
 
@@ -2912,11 +2933,11 @@ msgstr "Показать расположение резервной копии 
 msgid "Skip"
 msgstr "Пропуск"
 
-#: ../wxui/memedit.py:2602
+#: ../wxui/memedit.py:2675
 msgid "Some memories are incompatible with this radio"
 msgstr "Некоторые ячейки памяти несовместимы с этой станцией"
 
-#: ../wxui/memedit.py:2440
+#: ../wxui/memedit.py:2513
 msgid "Some memories are not deletable"
 msgstr "Некоторые ячейки памяти нельзя удалить"
 
@@ -2925,7 +2946,7 @@ msgstr "Некоторые ячейки памяти нельзя удалить
 msgid "Sort %i memories"
 msgstr "Упорядочить ячейки памяти (%i)"
 
-#: ../wxui/memedit.py:2246
+#: ../wxui/memedit.py:2280
 #, python-format
 msgid "Sort %i memory"
 msgid_plural "Sort %i memories"
@@ -2933,7 +2954,7 @@ msgstr[0] "Упорядочить ячейки памяти (%i)"
 msgstr[1] "Упорядочить ячейки памяти (%i)"
 msgstr[2] "Упорядочить ячейки памяти (%i)"
 
-#: ../wxui/memedit.py:2250
+#: ../wxui/memedit.py:2284
 #, python-format
 msgid "Sort %i memory ascending"
 msgid_plural "Sort %i memories ascending"
@@ -2941,7 +2962,7 @@ msgstr[0] "Упорядочить ячейки памяти (%i) по возра
 msgstr[1] "Упорядочить ячейки памяти (%i) по возрастанию"
 msgstr[2] "Упорядочить ячейки памяти (%i) по возрастанию"
 
-#: ../wxui/memedit.py:2272
+#: ../wxui/memedit.py:2306
 #, python-format
 msgid "Sort %i memory descending"
 msgid_plural "Sort %i memories descending"
@@ -2957,8 +2978,8 @@ msgstr "Сортировать по столбцу:"
 msgid "Sort memories"
 msgstr "Упорядочить ячейки памяти"
 
-#: ../sources/przemienniki_eu.py:60 ../sources/przemienniki_net.py:62
-#: ../sources/mapy73pl.py:64
+#: ../sources/mapy73pl.py:64 ../sources/przemienniki_eu.py:60
+#: ../sources/przemienniki_net.py:62
 msgid "Sorting"
 msgstr "Сортировка"
 
@@ -3063,7 +3084,7 @@ msgstr "Редактору памяти требуется перезагруз�
 msgid "The recommended procedure for importing memories is to open the source file and copy/paste memories from it into your target image. If you continue with this import function, CHIRP will replace all memories in your currently-open file with those in %(file)s. Would you like to open this file to copy/paste memories across, or proceed with the import?"
 msgstr "Рекомендуемая процедура импорта ячеек памяти: открыть исходный файл и скопировать/вставить ячейки памяти из него в ваш целевой образ. Если продолжить работу с этой функцией импорта, CHIRP заменит все ячейки памяти в текущем открытом файле на ячейки из %(file)s. Открыть этот файл для копирования/вставки ячеек памяти или продолжить импорт?"
 
-#: ../wxui/memedit.py:2207
+#: ../wxui/memedit.py:2241
 msgid "This Memory"
 msgstr "Эта ячейка памяти"
 
@@ -3130,11 +3151,11 @@ msgstr ""
 msgid "This is the ticket number for an already-created issue on the chirpmyradio.com website"
 msgstr "Это номер для уже созданной задачи на веб-сайте chirpmyradio.com"
 
-#: ../wxui/memedit.py:2211
+#: ../wxui/memedit.py:2245
 msgid "This memory and shift all up"
 msgstr "Эта ячейка памяти и сдвинуть все вверх"
 
-#: ../wxui/memedit.py:2209
+#: ../wxui/memedit.py:2243
 msgid "This memory and shift block up"
 msgstr "Эта ячейка памяти и сдвинуть блок вверх"
 
@@ -3241,7 +3262,7 @@ msgstr "Перед редактированием ячейки памяти не
 msgid "Unable to find stock config %r"
 msgstr "Не удалось найти предустановленную конфигурацию %r"
 
-#: ../wxui/memedit.py:2457
+#: ../wxui/memedit.py:2530
 msgid "Unable to import while the view is sorted"
 msgstr "Невозможно выполнить импорт, пока область просмотра упорядочена"
 
@@ -3249,8 +3270,8 @@ msgstr "Невозможно выполнить импорт, пока обла�
 msgid "Unable to open the clipboard"
 msgstr "Не удалось открыть буфер обмена"
 
-#: ../sources/przemienniki_eu.py:46 ../sources/przemienniki_net.py:48
-#: ../sources/mapy73pl.py:50
+#: ../sources/mapy73pl.py:50 ../sources/przemienniki_eu.py:46
+#: ../sources/przemienniki_net.py:48
 msgid "Unable to query"
 msgstr "Не удалось выполнить запрос"
 
@@ -3288,6 +3309,10 @@ msgstr "Отключите кабель (если требуется) и наж�
 #, python-format
 msgid "Unsupported model %r"
 msgstr "Неподдерживаемая модель %r"
+
+#: ../wxui/memedit.py:2982
+msgid "Update"
+msgstr ""
 
 #: ../wxui/bugreport.py:218
 msgid "Update an existing bug"
@@ -3363,7 +3388,7 @@ msgstr "Значение должно быть больше или равно н
 msgid "Value to search memory field for"
 msgstr "Значение, которое следует найти в поле памяти"
 
-#: ../wxui/memedit.py:2880
+#: ../wxui/memedit.py:3037
 msgid "Values"
 msgstr "Значения"
 
@@ -3379,8 +3404,8 @@ msgstr "Вид"
 msgid "WARNING!"
 msgstr "ПРЕДУПРЕЖДЕНИЕ!"
 
-#: ../wxui/bugreport.py:234 ../wxui/memedit.py:2010 ../wxui/main.py:1891
-#: ../wxui/main.py:2043
+#: ../wxui/bugreport.py:234 ../wxui/main.py:1891 ../wxui/main.py:2043
+#: ../wxui/memedit.py:2010
 msgid "Warning"
 msgstr "Предупреждение"
 
@@ -3510,9 +3535,6 @@ msgstr "{bank} полон"
 
 #~ msgid "Callsign"
 #~ msgstr "Позывной"
-
-#~ msgid "Cancel"
-#~ msgstr "Отмена"
 
 #~ msgid "Cancelled"
 #~ msgstr "Отменено"
